@@ -1,5 +1,8 @@
 # Clusterizza & Misura (Speciale Advanced SEO Tools 2025)
 
+[![Apri in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/USER/REPO/blob/master/clusterizza_e_misura.ipynb)
+![OpenRouter API](https://img.shields.io/badge/OpenRouter-API-blue)
+
 Notebook per il clustering e la valutazione automatica di dati testuali tramite modelli LLM (Large Language Model) e API OpenRouter, pensato per essere eseguito su Google Colab.
 
 Il significato di questo tool sarà rivelato ad Search Connect 2025! 
@@ -85,13 +88,30 @@ In questa cella definisci i 2 prompt che saranno usati dal servizio.
 
 ## ✍️ Crediti
 
-A cura di [Andrea Scarpetta](https://www.andreascarpetta.it), parte del collettivo [Search Foundry](https://www.searchfoundry.pro)
+- A cura di [Andrea Scarpetta](https://www.andreascarpetta.it), parte del collettivo [Search Foundry](https://www.searchfoundry.pro)
 
-File di esempio curato da [Martino Mosna](https://www.martinomosna.com).
+- File di esempio curato da [Martino Mosna](https://www.martinomosna.com).
 
 ## Licenza
 
 Questo progetto è distribuito con licenza [MIT](LICENSE).
+
+## Come contribuire
+
+Se vuoi contribuire, proporre miglioramenti o segnalare problemi (e non sai usare le issue di github), puoi contattarmi direttamente su [LinkedIn](https://www.linkedin.com/in/andreascarpetta).
+
+## FAQ
+
+Work in progress.
+
+---
+© 2025 Andrea Scarpetta, Search Foundry
+
+Made with ❤️, AI and [Jupyter](https://jupyter.org/) · Powered by [OpenRouter](https://openrouter.ai/)
+
+Questo progetto è rilasciato a scopo didattico e sperimentale. Nessuna garanzia di funzionamento in produzione.
+
+Se ti è stato utile, lascia una ⭐️ su GitHub!
 
 
 

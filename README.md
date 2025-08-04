@@ -5,7 +5,7 @@
 
 Notebook per il clustering e la valutazione automatica di dati testuali tramite modelli LLM (Large Language Model) e API OpenRouter, pensato per essere eseguito su Google Colab.
 
-Il significato di questo tool sarà rivelato ad Search Connect 2025! 
+Il significato di questo tool sarà rivelato durante Search Connect 2025! 
 
 ## ✨ Funzionalità principali
 

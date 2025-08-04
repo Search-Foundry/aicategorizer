@@ -97,6 +97,8 @@ In questa cella definisci i 2 prompt che saranno usati dal servizio.
 
 ## ✍️ Crediti
 
+![Search Foundry](screenshots/SearchFoundryLogo.svg)
+
 - A cura di [Andrea Scarpetta](https://www.andreascarpetta.it), parte del collettivo [Search Foundry](https://www.searchfoundry.pro)
 
 - File di esempio curato da [Martino Mosna](https://www.martinomosna.com).

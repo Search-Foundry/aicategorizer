@@ -15,7 +15,7 @@ Il significato di questo tool sarà rivelato ad Search Connect 2025!
 - **Compatibilità diretta con Google Colab** (upload file, gestione segreti, ecc.).
 - **Messaggi e interfaccia completamente in italiano**.
 
-## Come funziona il test? 
+## ⁉️ Come funziona il test? 
 
 1. un SEO esperto fornisce un elenco di query che ha categorizzato in cluster e sub-cluster
 2. viene definito un prompt per simulare il lavoro di categorizzazione usando un LLM, come se fosse un esperto SEO
@@ -118,9 +118,9 @@ Se vuoi contribuire, proporre miglioramenti o segnalare problemi (e non sai usar
 > per misurare anche l'attendibilità dei provider di LLM. Un lavoro in "batch" da 30-40 query alla volta era fattibile, ma openrouter  su diversi provider selezionando quasi sempre quello più attendibile. Ho voluto misurare anche quando la chiamata ai provider non andava a buon fine. E in quel caso la query ottiene un voto "zero".
 
 ---
-© 2025 Andrea Scarpetta, Search Foundry
+© 2025 Andrea Scarpetta - Founding member of Search Foundry
 
-Made with ❤️, AI and [Jupyter](https://jupyter.org/) · Powered by [OpenRouter](https://openrouter.ai/)
+Made with ❤️, 🤖  AI and [Jupyter](https://jupyter.org/) · Powered by [OpenRouter](https://openrouter.ai/)
 
 Questo progetto è rilasciato a scopo didattico e sperimentale. Nessuna garanzia di funzionamento in produzione.
 

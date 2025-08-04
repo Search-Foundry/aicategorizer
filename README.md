@@ -21,6 +21,7 @@ Il significato di questo tool sarà rivelato ad Search Connect 2025!
 2. viene definito un prompt per simulare il lavoro di categorizzazione usando un LLM, come se fosse un esperto SEO
 3. un secondo modello di LLM analizza la risposta del primo, valutando semanticamente la "somiglianza" rispetto all'originale. In una scala da 0 a 100, dove 100 è identico, 0 rappresenta una completa dissonanza.
 4. Alla fine del processo, il servizio salva tutti i risultati in un file CSV, contentente i dati originali, i dati ottenuti dal primo LLM e il coefficiente di similarità.
+5. Il resto sarà spiegato ad AST 2025 o al Search Connect 2025 (se mi accettano)
 
 
 ## 🚀 Come utilizzare il notebook

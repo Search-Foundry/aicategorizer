@@ -15,6 +15,14 @@ Il significato di questo tool sarà rivelato ad Search Connect 2025!
 - **Compatibilità diretta con Google Colab** (upload file, gestione segreti, ecc.).
 - **Messaggi e interfaccia completamente in italiano**.
 
+## Come funziona il test? 
+
+1. un SEO esperto fornisce un elenco di query che ha categorizzato in cluster e sub-cluster
+2. viene definito un prompt per simulare il lavoro di categorizzazione usando un LLM, come se fosse un esperto SEO
+3. un secondo modello di LLM analizza la risposta del primo, valutando semanticamente la "somiglianza" rispetto all'originale. In una scala da 0 a 100, dove 100 è identico, 0 rappresenta una completa dissonanza.
+4. Alla fine del processo, il servizio salva tutti i risultati in un file CSV, contentente i dati originali, i dati ottenuti dal primo LLM e il coefficiente di similarità.
+
+
 ## 🚀 Come utilizzare il notebook
 
 ### 1. Carica il notebook su Google Colab
@@ -102,7 +110,9 @@ Se vuoi contribuire, proporre miglioramenti o segnalare problemi (e non sai usar
 
 ## FAQ
 
-Work in progress.
+### Perchè il servizio analizza una query alla volta ? 
+
+> per misurare anche l'attendibilità dei servizi. Un lavoro in "batch" da 30-40 query alla volta era fattibile, ma basandosi su diversi provider tramite openrouter, ho voluto misurare anche quando la chiamata al servizio non andava a buon fine. E in quel caso ottiene un voto "zero".
 
 ---
 © 2025 Andrea Scarpetta, Search Foundry

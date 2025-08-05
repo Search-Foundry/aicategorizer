@@ -10,7 +10,10 @@ Notebook per il clustering e la valutazione automatica di dati testuali tramite 
 
 Il significato di questo tool sarà rivelato durante Search Connect 2025! 
 
-## Tabella dei contenuti
+![](https://i.imgur.com/waxVImv.png)
+
+# Tabella dei contenuti
+
 
   - [✨ Funzionalità principali](#-funzionalità-principali)
   - [⁉️ Come funziona il test?](#️-come-funziona-il-test)
@@ -23,13 +26,13 @@ Il significato di questo tool sarà rivelato durante Search Connect 2025!
     - [5. Configura i parametri](#5-configura-i-parametri)
     - [6. Avvia l’elaborazione](#6-avvia-lelaborazione)
   - [📂 Struttura del progetto](#-struttura-del-progetto)
+  - [Condividi con la community](#condividi-con-la-community)
   - [ℹ️ Note](#ℹ️-note)
   - [✍️ Crediti](#️-crediti)
   - [Licenza](#licenza)
   - [Come contribuire](#come-contribuire)
   - [FAQ](#faq)
     - [Perchè il servizio analizza una query alla volta ?](#perchè-il-servizio-analizza-una-query-alla-volta-)
-
 
 ## ✨ Funzionalità principali
 
@@ -46,6 +49,8 @@ Il significato di questo tool sarà rivelato durante Search Connect 2025!
 3. un secondo modello di LLM analizza la risposta del primo, valutando semanticamente la "somiglianza" rispetto all'originale. In una scala da 0 a 100, dove 100 è identico, 0 rappresenta una completa dissonanza.
 4. Alla fine del processo, il servizio salva tutti i risultati in un file CSV, contentente i dati originali, i dati ottenuti dal primo LLM e il coefficiente di similarità.
 5. Il resto sarà spiegato ad AST 2025 o al Search Connect 2025 (se mi accettano)
+
+![](https://i.imgur.com/waxVImv.png)
 
 ## Requisiti
 
@@ -108,7 +113,7 @@ In questa cella definisci i 2 prompt che saranno usati dal servizio.
 - Esegui le celle del notebook una alla volta (Shift+Invio) seguendo l’ordine suggerito.
 - Al termine, scarica i risultati dalla sezione “risultati”.
 
----
+![](https://i.imgur.com/waxVImv.png)
 
 ## 📂 Struttura del progetto
 
@@ -117,7 +122,16 @@ In questa cella definisci i 2 prompt che saranno usati dal servizio.
 - `test-30-martino.csv` - file di esempio  
 - `screenshots` - immagini di queste istruzioni
   
----
+![](https://i.imgur.com/waxVImv.png)
+
+## Condividi con la community
+
+Se questo progetto ti è stato utile, considera la possibilità di condividerlo con altri professionisti o appassionati di SEO e AI!  
+Diffondere strumenti open source aiuta tutta la community a crescere.
+
+[![Condividi su twitter perchè X è un nome idiota](https://img.shields.io/badge/condividi%20su-twitter-03A9F4?logo=twitter)](https://twitter.com/share?url=https://github.com/andreascarpetta/clusterizza-misura&text=Scopri%20Clusterizza%20%26%20Misura%3A%20clustering%20e%20valutazione%20di%20query%20testuali%20con%20AI%20su%20Colab!)
+[![Condividi su Facebook](https://img.shields.io/badge/condividi%20su-facebook-1976D2?logo=facebook)](https://www.facebook.com/sharer/sharer.php?u=https://github.com/andreascarpetta/clusterizza-misura)
+[![Condividi su LinkedIn](https://img.shields.io/badge/condividi%20su-linkedin-3949AB?logo=linkedin)](https://www.linkedin.com/shareArticle?url=https://github.com/andreascarpetta/clusterizza-misura&title=Clusterizza%20%26%20Misura%3A%20clustering%20e%20valutazione%20di%20query%20testuali%20con%20AI%20su%20Colab)
 
 ## ℹ️ Note
 

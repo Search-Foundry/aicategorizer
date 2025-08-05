@@ -10,6 +10,29 @@ Notebook per il clustering e la valutazione automatica di dati testuali tramite 
 
 Il significato di questo tool sarà rivelato durante Search Connect 2025! 
 
+## Tabella dei contenuti
+
+- [Clusterizza \& Misura (Speciale Advanced SEO Tools 2025)](#clusterizza--misura-speciale-advanced-seo-tools-2025)
+  - [Tabella dei contenuti](#tabella-dei-contenuti)
+  - [✨ Funzionalità principali](#-funzionalità-principali)
+  - [⁉️ Come funziona il test?](#️-come-funziona-il-test)
+  - [Requisiti](#requisiti)
+  - [🚀 Come utilizzare il notebook](#-come-utilizzare-il-notebook)
+    - [1. Carica il notebook su Google Colab](#1-carica-il-notebook-su-google-colab)
+    - [2. Inserisci la chiave API di OpenRouter](#2-inserisci-la-chiave-api-di-openrouter)
+    - [3. Carica il file CSV di input](#3-carica-il-file-csv-di-input)
+    - [4. Configura i Prompt di servizio](#4-configura-i-prompt-di-servizio)
+    - [5. Configura i parametri](#5-configura-i-parametri)
+    - [6. Avvia l’elaborazione](#6-avvia-lelaborazione)
+  - [📂 Struttura del progetto](#-struttura-del-progetto)
+  - [ℹ️ Note](#ℹ️-note)
+  - [✍️ Crediti](#️-crediti)
+  - [Licenza](#licenza)
+  - [Come contribuire](#come-contribuire)
+  - [FAQ](#faq)
+    - [Perchè il servizio analizza una query alla volta ?](#perchè-il-servizio-analizza-una-query-alla-volta-)
+
+
 ## ✨ Funzionalità principali
 
 - **Clustering** di dati testuali tramite modelli LLM.

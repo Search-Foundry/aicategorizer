@@ -12,8 +12,6 @@ Il significato di questo tool sarà rivelato durante Search Connect 2025!
 
 ## Tabella dei contenuti
 
-- [Clusterizza \& Misura (Speciale Advanced SEO Tools 2025)](#clusterizza--misura-speciale-advanced-seo-tools-2025)
-  - [Tabella dei contenuti](#tabella-dei-contenuti)
   - [✨ Funzionalità principali](#-funzionalità-principali)
   - [⁉️ Come funziona il test?](#️-come-funziona-il-test)
   - [Requisiti](#requisiti)

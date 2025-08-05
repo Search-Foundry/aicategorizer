@@ -15,6 +15,8 @@ Il significato di questo tool sarà rivelato durante Search Connect 2025!
 # Tabella dei contenuti
 
 
+- [Clusterizza \& Misura (Speciale Advanced SEO Tools 2025)](#clusterizza--misura-speciale-advanced-seo-tools-2025)
+- [Tabella dei contenuti](#tabella-dei-contenuti)
   - [✨ Funzionalità principali](#-funzionalità-principali)
   - [⁉️ Come funziona il test?](#️-come-funziona-il-test)
   - [Requisiti](#requisiti)
@@ -129,9 +131,9 @@ In questa cella definisci i 2 prompt che saranno usati dal servizio.
 Se questo progetto ti è stato utile, considera la possibilità di condividerlo con altri professionisti o appassionati di SEO e AI!  
 Diffondere strumenti open source aiuta tutta la community a crescere.
 
-[![Condividi su twitter perchè X è un nome idiota](https://img.shields.io/badge/condividi%20su-twitter-03A9F4?logo=twitter)](https://twitter.com/share?url=https://github.com/andreascarpetta/clusterizza-misura&text=Scopri%20Clusterizza%20%26%20Misura%3A%20clustering%20e%20valutazione%20di%20query%20testuali%20con%20AI%20su%20Colab!)
-[![Condividi su Facebook](https://img.shields.io/badge/condividi%20su-facebook-1976D2?logo=facebook)](https://www.facebook.com/sharer/sharer.php?u=https://github.com/andreascarpetta/clusterizza-misura)
-[![Condividi su LinkedIn](https://img.shields.io/badge/condividi%20su-linkedin-3949AB?logo=linkedin)](https://www.linkedin.com/shareArticle?url=https://github.com/andreascarpetta/clusterizza-misura&title=Clusterizza%20%26%20Misura%3A%20clustering%20e%20valutazione%20di%20query%20testuali%20con%20AI%20su%20Colab)
+[![Condividi su twitter perchè X è un nome idiota](https://img.shields.io/badge/condividi%20su-twitter-03A9F4?logo=twitter)](https://twitter.com/share?url=https://github.com/garethjax/aicategorizer&text=Scopri%20Clusterizza%20%26%20Misura%3A%20clustering%20e%20valutazione%20di%20query%20testuali%20con%20AI%20su%20Colab!)
+[![Condividi su Facebook](https://img.shields.io/badge/condividi%20su-facebook-1976D2?logo=facebook)](https://www.facebook.com/sharer/sharer.php?u=https://github.com/garethjax/aicategorizer)
+[![Condividi su LinkedIn](https://img.shields.io/badge/condividi%20su-linkedin-3949AB?logo=linkedin)](https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fgithub.com%2Fgarethjax%2Faicategorizer&title=Clusterizza%20%26%20Misura%3A%20clustering%20e%20valutazione%20di%20query%20testuali%20con%20AI%20su%20Colab)
 
 ## ℹ️ Note
 

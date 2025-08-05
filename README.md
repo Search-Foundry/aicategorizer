@@ -23,6 +23,13 @@ Il significato di questo tool sarà rivelato durante Search Connect 2025!
 4. Alla fine del processo, il servizio salva tutti i risultati in un file CSV, contentente i dati originali, i dati ottenuti dal primo LLM e il coefficiente di similarità.
 5. Il resto sarà spiegato ad AST 2025 o al Search Connect 2025 (se mi accettano)
 
+## Requisiti
+
+- un account google su cui far girare il colab (clicca il link in cima alla pagina)
+- un account openrouter: https://openrouter.ai/
+  - Openrouter è un servizio che fa da intermediario tra un numero smisurato di fornitori di modelli LLM. Si crea un account (che è gratuito), si carica un credito (il minimo credo che sia 5 dollari) e poi si consuma il credito sulla base dell'utilizzo. Non c'è un abbonamento ricorrente.
+  - a seconda del modello il costo oscilla tra 1 centesimo ogni 100 query a 10 centesimi ogni 100 query.
+
 
 ## 🚀 Come utilizzare il notebook
 

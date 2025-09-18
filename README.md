@@ -2,7 +2,8 @@
 
 ![Cover image di clusterizza e misura](screenshots/coverimage.png)
 
-[![Apri in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/USER/REPO/blob/master/clusterizza_e_misura.ipynb)
+[![Apri in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Search-Foundry/aicategorizer/blob/master/files/clusterizza_e_misura.ipynb)
+
 ![OpenRouter API](https://img.shields.io/badge/OpenRouter-API-blue)
 [![Licenza MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 

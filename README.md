@@ -161,7 +161,7 @@ Se vuoi contribuire, proporre miglioramenti o segnalare problemi (e non sai usar
 
 ### Perchè il servizio analizza una query alla volta ? 
 
-> per misurare anche l'attendibilità dei provider di LLM. Un lavoro in "batch" da 30-40 query alla volta era fattibile, ma openrouter  su diversi provider selezionando quasi sempre quello più attendibile. Ho voluto misurare anche quando la chiamata ai provider non andava a buon fine. E in quel caso la query ottiene un voto "zero".
+> per misurare anche l'attendibilità dei provider di LLM. Un lavoro in "batch" da 30-40 query alla volta era fattibile, ma openrouter chiama diversi provider (se disponibile una scelta) selezionando quasi sempre quello più attendibile. Ho voluto misurare anche quando la chiamata ai provider non andava a buon fine. E in quel caso la query ottiene un voto "zero".
 
 ---
 © 2025 Andrea Scarpetta - Founding member of Search Foundry

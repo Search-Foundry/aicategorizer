@@ -1,8 +1,7 @@
 # Clusterizza & Misura (Speciale Advanced SEO Tools 2025)
 
 ![Cover image di clusterizza e misura](screenshots/coverimage.png)
-
-[![Apri in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/USER/REPO/blob/master/clusterizza_e_misura.ipynb)
+[![Apri in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Search-Foundry/aicategorizer/blob/master/files/clusterizza_e_misura.ipynb)
 ![OpenRouter API](https://img.shields.io/badge/OpenRouter-API-blue)
 [![Licenza MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
@@ -162,7 +161,7 @@ Se vuoi contribuire, proporre miglioramenti o segnalare problemi (e non sai usar
 
 ### Perchè il servizio analizza una query alla volta ? 
 
-> per misurare anche l'attendibilità dei provider di LLM. Un lavoro in "batch" da 30-40 query alla volta era fattibile, ma openrouter  su diversi provider selezionando quasi sempre quello più attendibile. Ho voluto misurare anche quando la chiamata ai provider non andava a buon fine. E in quel caso la query ottiene un voto "zero".
+> per misurare anche l'attendibilità dei provider di LLM. Un lavoro in "batch" da 30-40 query alla volta era fattibile, ma openrouter chiama diversi provider (se disponibile una scelta) selezionando quasi sempre quello più attendibile. Ho voluto misurare anche quando la chiamata ai provider non andava a buon fine. E in quel caso la query ottiene un voto "zero".
 
 ---
 © 2025 Andrea Scarpetta - Founding member of Search Foundry

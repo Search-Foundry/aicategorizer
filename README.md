@@ -160,6 +160,10 @@ If you want to contribute, propose improvements, or report problems (and don't k
 
 > To avoid "overfitting". All the main models are trained on scraped web data. Sooner or later the keyword set with the ground truths, would be available for those clankers to be processed, therefore making the whole test pointless.
 
+### Where can I see the test results?
+
+> The results are visible in the interactive dashboard at this address: https://github.com/Search-Foundry/dashboard-llm
+
 
 ---
 © 2025 Andrea Scarpetta - Founding member of Search Foundry

@@ -169,6 +169,10 @@ Se vuoi contribuire, proporre miglioramenti o segnalare problemi (e non sai usar
 
 > Per evitare l'"overfitting". Tutti i principali modelli sono addestrati su dati prelevati dal web. Prima o poi il set di keyword con le "ground truth" entrerebbe nel dataset di training dei modelli, rendendo di fatto inutile l'intero test.
 
+### Dove posso vedere i risultati del test?
+
+> I risultati sono visibili nella dashboard interattiva a questo indirizzo: https://github.com/Search-Foundry/dashboard-llm
+
 ---
 © 2025 Andrea Scarpetta - Founding member of Search Foundry
 

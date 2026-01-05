@@ -72,7 +72,7 @@ The meaning of this tool will be revealed during Search Connect 2025!
 
 ### 2. Enter the OpenRouter API key
 
-![Insert API Key](screenshots/2.chiaveapi.jpg)
+![Insert API Key](screenshots/2.chiaveapi-en.jpg)
 
 - Follow the instructions in the first cell of the notebook to enter your API key (via Colab Secrets or direct field).
 

@@ -165,6 +165,10 @@ Se vuoi contribuire, proporre miglioramenti o segnalare problemi (e non sai usar
 
 > per misurare anche l'attendibilità dei provider di LLM. Un lavoro in "batch" da 30-40 query alla volta era fattibile, ma openrouter chiama diversi provider (se disponibile una scelta) selezionando quasi sempre quello più attendibile. Ho voluto misurare anche quando la chiamata ai provider non andava a buon fine. E in quel caso la query ottiene un voto "zero".
 
+### Perché non posso avere il set completo di keyword?
+
+> Per evitare l'"overfitting". Tutti i principali modelli sono addestrati su dati prelevati dal web. Prima o poi il set di keyword con le "ground truth" entrerebbe nel dataset di training dei modelli, rendendo di fatto inutile l'intero test.
+
 ---
 © 2025 Andrea Scarpetta - Founding member of Search Foundry
 

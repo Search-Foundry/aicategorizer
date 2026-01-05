@@ -156,6 +156,11 @@ If you want to contribute, propose improvements, or report problems (and don't k
 
 > To also measure the reliability of LLM providers. A "batch" job of 30-40 queries at a time was feasible, but OpenRouter calls different providers (if a choice is available), almost always selecting the most reliable one. I also wanted to measure when the call to providers failed. And in that case, the query gets a "zero" grade.
 
+### Why i can't get the complete keyword set ?
+
+> To avoid "overfitting". All the main models are trained on scraped web data. Sooner or later the keyword set with the ground truths, would be available for those clankers to be processed, therefore making the whole test pointless.
+
+
 ---
 © 2025 Andrea Scarpetta - Founding member of Search Foundry
 

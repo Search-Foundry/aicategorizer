@@ -1,176 +1,166 @@
-# Clusterizza & Misura (Speciale Advanced SEO Tools 2025)
+[🇮🇹 Italiano](README.it.md) | [🇺🇸 English](README.md)
 
-![Cover image di clusterizza e misura](screenshots/coverimage.png)
-[![Apri in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Search-Foundry/aicategorizer/blob/master/files/clusterizza_e_misura.ipynb)
+# Clusterize & Measure (Advanced SEO Tools 2025 Special)
+
+![Clusterize and Measure Cover Image](screenshots/coverimage.png)
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Search-Foundry/aicategorizer/blob/master/files/clusterizza_e_misura.ipynb)
 ![OpenRouter API](https://img.shields.io/badge/OpenRouter-API-blue)
-[![Licenza MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-Notebook per il clustering e la valutazione automatica di dati testuali tramite modelli LLM (Large Language Model) e API OpenRouter, pensato per essere eseguito su Google Colab.
+Notebook for clustering and automatic evaluation of textual data using LLM (Large Language Model) models and OpenRouter API, designed to run on Google Colab.
 
-Il significato di questo tool sarà rivelato durante Search Connect 2025! 
+The meaning of this tool will be revealed during Search Connect 2025!
 
 ![](https://i.imgur.com/waxVImv.png)
 
-# Tabella dei contenuti
+# Table of Contents
 
-
-- [Clusterizza \& Misura (Speciale Advanced SEO Tools 2025)](#clusterizza--misura-speciale-advanced-seo-tools-2025)
-- [Tabella dei contenuti](#tabella-dei-contenuti)
-  - [✨ Funzionalità principali](#-funzionalità-principali)
-  - [⁉️ Come funziona il test?](#️-come-funziona-il-test)
-  - [Requisiti](#requisiti)
-  - [🚀 Come utilizzare il notebook](#-come-utilizzare-il-notebook)
-    - [1. Carica il notebook su Google Colab](#1-carica-il-notebook-su-google-colab)
-    - [2. Inserisci la chiave API di OpenRouter](#2-inserisci-la-chiave-api-di-openrouter)
-    - [3. Carica il file CSV di input](#3-carica-il-file-csv-di-input)
-    - [4. Configura i Prompt di servizio](#4-configura-i-prompt-di-servizio)
-    - [5. Configura i parametri](#5-configura-i-parametri)
-    - [6. Avvia l’elaborazione](#6-avvia-lelaborazione)
-  - [📂 Struttura del progetto](#-struttura-del-progetto)
-  - [Condividi con la community](#condividi-con-la-community)
-  - [ℹ️ Note](#ℹ️-note)
-  - [✍️ Crediti](#️-crediti)
-  - [Licenza](#licenza)
-  - [Come contribuire](#come-contribuire)
+- [Clusterize & Measure (Advanced SEO Tools 2025 Special)](#clusterize--measure-advanced-seo-tools-2025-special)
+- [Table of Contents](#table-of-contents)
+  - [✨ Main Features](#-main-features)
+  - [⁉️ How does the test work?](#️-how-does-the-test-work)
+  - [Requirements](#requirements)
+  - [🚀 How to use the notebook](#-how-to-use-the-notebook)
+    - [1. Upload the notebook to Google Colab](#1-upload-the-notebook-to-google-colab)
+    - [2. Enter the OpenRouter API key](#2-enter-the-openrouter-api-key)
+    - [3. Upload the input CSV file](#3-upload-the-input-csv-file)
+    - [4. Configure Service Prompts](#4-configure-service-prompts)
+    - [5. Configure parameters](#5-configure-parameters)
+    - [6. Start processing](#6-start-processing)
+  - [📂 Project Structure](#-project-structure)
+  - [Share with the community](#share-with-the-community)
+  - [ℹ️ Notes](#ℹ️-notes)
+  - [✍️ Credits](#️-credits)
+  - [License](#license)
+  - [How to contribute](#how-to-contribute)
   - [FAQ](#faq)
-    - [Perchè il servizio analizza una query alla volta ?](#perchè-il-servizio-analizza-una-query-alla-volta-)
+    - [Why does the service analyze one query at a time?](#why-does-the-service-analyze-one-query-at-a-time)
 
-## ✨ Funzionalità principali
+## ✨ Main Features
 
-- **Clustering** di dati testuali tramite modelli LLM.
-- **Valutazione della similarità semantica** tra output del modello e ground truth.
-- **Gestione semplice di input/output CSV**.
-- **Compatibilità diretta con Google Colab** (upload file, gestione segreti, ecc.).
-- **Messaggi e interfaccia completamente in italiano**.
+- **Clustering** of textual data via LLM models.
+- **Semantic similarity evaluation** between model output and ground truth.
+- **Simple CSV input/output management**.
+- **Direct compatibility with Google Colab** (file upload, secrets management, etc.).
+- **Messages and interface completely in English**.
 
-## ⁉️ Come funziona il test? 
+## ⁉️ How does the test work?
 
-1. un SEO esperto fornisce un elenco di query che ha categorizzato in cluster e sub-cluster
-2. viene definito un prompt per simulare il lavoro di categorizzazione usando un LLM, come se fosse un esperto SEO
-3. un secondo modello di LLM analizza la risposta del primo, valutando semanticamente la "somiglianza" rispetto all'originale. In una scala da 0 a 100, dove 100 è identico, 0 rappresenta una completa dissonanza.
-4. Alla fine del processo, il servizio salva tutti i risultati in un file CSV, contentente i dati originali, i dati ottenuti dal primo LLM e il coefficiente di similarità.
-5. Il resto sarà spiegato ad AST 2025 o al Search Connect 2025 (se mi accettano)
-
-![](https://i.imgur.com/waxVImv.png)
-
-## Requisiti
-
-- un account google su cui far girare il colab (clicca il link in cima alla pagina)
-- un account openrouter con cui creare una api key: https://openrouter.ai/
-  - Openrouter è un servizio che fa da intermediario tra un numero smisurato di fornitori di modelli LLM. Si crea un account (che è gratuito), si carica un credito (il minimo credo che sia 5 dollari) e poi si consuma il credito sulla base dell'utilizzo. Non c'è un abbonamento ricorrente.
-  - a seconda del modello il costo oscilla tra 1 centesimo ogni 100 query a 10 centesimi ogni 100 query.
-
-
-## 🚀 Come utilizzare il notebook
-
-### 1. Carica il notebook su Google Colab
-
-
-![Schermata di caricamento del file CSV su Colab](screenshots/1.caricamento.jpg)
-
-
-- Vai su [Google Colab](https://colab.research.google.com/).
-- Clicca su “File” → “Carica notebook” e seleziona `clusterizza_e_misura.ipynb` dal tuo computer.
-
-
-### 2. Inserisci la chiave API di OpenRouter
-
-![Inserisci la chiave API](screenshots/2.chiaveapi.jpg)
-
-- Segui le istruzioni nella prima cella del notebook per inserire la tua chiave API (tramite Colab Secrets o campo diretto).
-
-
-### 3. Carica il file CSV di input
-
-![carica il file csv](screenshots/3.caricacsv.jpg)
-
-- Utilizza la sezione dedicata per caricare il tuo file CSV.
-- Il file deve contenere almeno le colonne `input` e `ground_truth`.
-- poi seleziona col tasto detro "copia percorso"
-- se ti serve un esempio seleziona "copia percorso" su test-30-martino.csv (ottimo se devi configurare il documento con le tue query)
-
-### 4. Configura i Prompt di servizio
-
-![configuriamo i prompts](screenshots/4.prompt.jpg)
-
-In questa cella definisci i 2 prompt che saranno usati dal servizio.
-
-- il primo prompt effettua la categorizzazione, per cui devi dire al modello con quali considerazioni adottare per clusterizzare una query e fornire degli esempi di come effettuarla.
-- il secondo prompt applica una valutazione semantica sul risultato ottenuto dal primo prompt, confrontandolo con la "verità" (ground_truth) fornita nel file csv.
-
-### 5. Configura i parametri
-
-![configuriamo i parametri](screenshots/5.parametri.jpg)
-
-
-- Imposta i modelli da utilizzare, gli altri parametri secondo le tue esigenze.
-- incolla il percorso del file csv nel campo corrispondente
-
-### 6. Avvia l’elaborazione
-
-![Avvia il processo](screenshots/6.avvio.jpg)
-
-
-- Esegui le celle del notebook una alla volta (Shift+Invio) seguendo l’ordine suggerito.
-- Al termine, scarica i risultati dalla sezione “risultati”.
+1. An SEO expert provides a list of queries they have categorized into clusters and sub-clusters.
+2. A prompt is defined to simulate the categorization work using an LLM, as if it were an SEO expert.
+3. A second LLM model analyzes the answer of the first one, semantically evaluating the "similarity" to the original. On a scale from 0 to 100, where 100 is identical, 0 represents complete dissonance.
+4. At the end of the process, the service saves all results in a CSV file, containing the original data, data obtained from the first LLM, and the similarity coefficient.
+5. The rest will be explained at AST 2025 or Search Connect 2025 (if they accept me).
 
 ![](https://i.imgur.com/waxVImv.png)
 
-## 📂 Struttura del progetto
+## Requirements
 
-- `clusterizza_e_misura.ipynb` — Notebook principale, pronto per l’uso su Colab.
-- `README.md` — Questo file.
-- `test-30-martino.csv` - file di esempio  
-- `screenshots` - immagini di queste istruzioni
-  
+- A Google account to run Colab (click the link at the top of the page).
+- An OpenRouter account to create an API key: https://openrouter.ai/
+  - OpenRouter is a service that acts as an intermediary between a huge number of LLM providers. You create an account (which is free), load credit (I believe the minimum is 5 dollars), and then consume credit based on usage. There is no recurring subscription.
+  - Depending on the model, the cost fluctuates between 1 cent (USD) per 100 queries to 10 cents per 100 queries.
+
+## 🚀 How to use the notebook
+
+### 1. Upload the notebook to Google Colab
+
+![Colab CSV Upload Screenshot](screenshots/1.caricamento.jpg)
+
+- Go to [Google Colab](https://colab.research.google.com/).
+- Click on "File" → "Upload notebook" and select `clusterizza_e_misura.ipynb` from your computer.
+
+### 2. Enter the OpenRouter API key
+
+![Insert API Key](screenshots/2.chiaveapi.jpg)
+
+- Follow the instructions in the first cell of the notebook to enter your API key (via Colab Secrets or direct field).
+
+### 3. Upload the input CSV file
+
+![Upload CSV file](screenshots/3.caricacsv.jpg)
+
+- Use the dedicated section to upload your CSV file.
+- The file must contain at least the columns `input` and `ground_truth`.
+- Then right-click "copy path".
+- If you need an example, select "copy path" on `test-30-martino.csv` (great if you need to configure the document with your queries).
+
+### 4. Configure Service Prompts
+
+![Configure prompts](screenshots/4.prompt.jpg)
+
+In this cell, you define the 2 prompts that will be used by the service.
+
+- The first prompt performs categorization, so you need to tell the model what considerations to adopt to cluster a query and provide examples of how to do it.
+- The second prompt applies a semantic evaluation on the result obtained from the first prompt, comparing it with the "truth" (ground_truth) provided in the CSV file.
+
+### 5. Configure parameters
+
+![Configure parameters](screenshots/5.parametri.jpg)
+
+- Set the models to use and other parameters according to your needs.
+- Paste the CSV file path into the corresponding field.
+
+### 6. Start processing
+
+![Start process](screenshots/6.avvio.jpg)
+
+- Execute the notebook cells one by one (Shift+Enter) following the suggested order.
+- At the end, download the results from the "results" section.
+
 ![](https://i.imgur.com/waxVImv.png)
 
-## Condividi con la community
+## 📂 Project Structure
 
-Se questo progetto ti è stato utile, considera la possibilità di condividerlo con altri professionisti o appassionati di SEO e AI!  
-Diffondere strumenti open source aiuta tutta la community a crescere.
+- `clusterizza_e_misura.ipynb` — Main notebook, ready for use on Colab.
+- `README.md` — This file.
+- `test-30-martino.csv` - Example file.
+- `screenshots` - Images for these instructions.
 
-[![Condividi su twitter perchè X è un nome idiota](https://img.shields.io/badge/condividi%20su-twitter-03A9F4?logo=twitter)](https://twitter.com/share?url=https://github.com/garethjax/aicategorizer&text=Scopri%20Clusterizza%20%26%20Misura%3A%20clustering%20e%20valutazione%20di%20query%20testuali%20con%20AI%20su%20Colab!)
-[![Condividi su Facebook](https://img.shields.io/badge/condividi%20su-facebook-1976D2?logo=facebook)](https://www.facebook.com/sharer/sharer.php?u=https://github.com/garethjax/aicategorizer)
-[![Condividi su LinkedIn](https://img.shields.io/badge/condividi%20su-linkedin-3949AB?logo=linkedin)](https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fgithub.com%2Fgarethjax%2Faicategorizer&title=Clusterizza%20%26%20Misura%3A%20clustering%20e%20valutazione%20di%20query%20testuali%20con%20AI%20su%20Colab)
+![](https://i.imgur.com/waxVImv.png)
 
-## ℹ️ Note
+## Share with the community
 
-- Il notebook è pensato per essere eseguito unicamente su Google Colab. L’esecuzione in ambiente locale richiede l’installazione manuale delle dipendenze e l’adattamento di alcune funzionalità (upload file, gestione segreti, ecc.). Per il mio esperimento non sono necessarie, ma se volete eseguirlo localmente dovete aggiungerle.
-- Per assistenza o segnalazione bug, apri una issue su GitHub.
+If this project was useful to you, consider sharing it with other SEO and AI professionals or enthusiasts!
+Spreading open source tools helps the whole community grow.
+
+[![Share on Twitter because X is a stupid name](https://img.shields.io/badge/share%20on-twitter-03A9F4?logo=twitter)](https://twitter.com/share?url=https://github.com/garethjax/aicategorizer&text=Discover%20Clusterize%20%26%20Measure%3A%20clustering%20and%20evaluation%20of%20text%20queries%20with%20AI%20on%20Colab!)
+[![Share on Facebook](https://img.shields.io/badge/share%20on-facebook-1976D2?logo=facebook)](https://www.facebook.com/sharer/sharer.php?u=https://github.com/garethjax/aicategorizer)
+[![Share on LinkedIn](https://img.shields.io/badge/share%20on-linkedin-3949AB?logo=linkedin)](https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fgithub.com%2Fgarethjax%2Faicategorizer&title=Clusterize%20%26%20Measure%3A%20clustering%20and%20evaluation%20of%20text%20queries%20with%20AI%20on%20Colab)
+
+## ℹ️ Notes
+
+- The notebook is designed to run solely on Google Colab. Running in a local environment requires manually installing dependencies and adapting some features (file upload, secrets management, etc.). For my experiment they are not necessary, but if you want to run it locally you must add them.
+- For assistance or bug reporting, open an issue on GitHub.
 
 ---
 
-## ✍️ Crediti
+## ✍️ Credits
 
 ![Search Foundry](screenshots/SearchFoundryLogo.svg)
 
-- A cura di [Andrea Scarpetta](https://www.andreascarpetta.it), parte del collettivo [Search Foundry](https://www.searchfoundry.pro)
+- Curated by [Andrea Scarpetta](https://www.andreascarpetta.it), part of the [Search Foundry](https://www.searchfoundry.pro) collective.
+- Example file curated by [Martino Mosna](https://www.martinomosna.com).
 
-- File di esempio curato da [Martino Mosna](https://www.martinomosna.com).
+## License
 
-## Licenza
+This project is distributed under the [MIT](LICENSE) license.
 
-Questo progetto è distribuito con licenza [MIT](LICENSE).
+## How to contribute
 
-## Come contribuire
-
-Se vuoi contribuire, proporre miglioramenti o segnalare problemi (e non sai usare le issue di github), puoi contattarmi direttamente su [LinkedIn](https://www.linkedin.com/in/andreascarpetta).
+If you want to contribute, propose improvements, or report problems (and don't know how to use github issues), you can contact me directly on [LinkedIn](https://www.linkedin.com/in/andreascarpetta).
 
 ## FAQ
 
-### Perchè il servizio analizza una query alla volta ? 
+### Why does the service analyze one query at a time?
 
-> per misurare anche l'attendibilità dei provider di LLM. Un lavoro in "batch" da 30-40 query alla volta era fattibile, ma openrouter chiama diversi provider (se disponibile una scelta) selezionando quasi sempre quello più attendibile. Ho voluto misurare anche quando la chiamata ai provider non andava a buon fine. E in quel caso la query ottiene un voto "zero".
+> To also measure the reliability of LLM providers. A "batch" job of 30-40 queries at a time was feasible, but OpenRouter calls different providers (if a choice is available), almost always selecting the most reliable one. I also wanted to measure when the call to providers failed. And in that case, the query gets a "zero" grade.
 
 ---
 © 2025 Andrea Scarpetta - Founding member of Search Foundry
 
-Made with ❤️, 🤖  AI and [Jupyter](https://jupyter.org/) · Powered by [OpenRouter](https://openrouter.ai/)
+Made with ❤️, 🤖 AI and [Jupyter](https://jupyter.org/) · Powered by [OpenRouter](https://openrouter.ai/)
 
-Questo progetto è rilasciato a scopo didattico e sperimentale. Nessuna garanzia di funzionamento in produzione.
+This project is released for educational and experimental purposes. No guarantee of operation in production.
 
-Se ti è stato utile, lascia una ⭐️ su GitHub!
-
-
-
+If it was useful, leave a ⭐️ on GitHub!

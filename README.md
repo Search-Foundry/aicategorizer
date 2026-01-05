@@ -3,7 +3,7 @@
 # Clusterize & Measure (Advanced SEO Tools 2025 Special)
 
 ![Clusterize and Measure Cover Image](screenshots/coverimage.png)
-[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Search-Foundry/aicategorizer/blob/master/files/clusterizza_e_misura.ipynb)
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Search-Foundry/aicategorizer/blob/master/clusterizza_e_misura.ipynb)
 ![OpenRouter API](https://img.shields.io/badge/OpenRouter-API-blue)
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
